@@ -1,0 +1,8 @@
+- These files should be in the "raw/" folder before running any python files:
+    + laptop_detail.json
+    + laptop_list.csv
+    + laptop_detail.json
+    + card-performance.json
+- In the folder "processed/", after run processing, there will be two files appearing here:
+    + data_remain_missing_val.csv
+    + final_data.csv

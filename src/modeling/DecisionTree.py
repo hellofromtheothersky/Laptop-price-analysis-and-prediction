@@ -14,7 +14,8 @@ class DecisionTree(BaseModel):
         grid_mdecison.fit(X, y)
         return grid_mdecison.best_params_ , grid_mdecison.best_score_
     
-    def train_model(self, X, y, max_depth):
+    def train_model(self, X, y, config):
+        max_depth=config['max_depth']
         input_pipe = [('Scale', StandardScaler()),
             ('model', DecisionTreeRegressor(max_depth=max_depth))]
         pipe = Pipeline(input_pipe)

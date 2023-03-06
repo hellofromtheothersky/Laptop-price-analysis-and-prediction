@@ -1,5 +1,6 @@
-INPUT_DIR='../../data/processed/'
-OUTPUT_DIR='../../data/processed/'
+#This file is exported from jupyter notebook
+INPUT_DIR='data/processed/'
+OUTPUT_DIR='data/processed/'
 
 
 import numpy as np

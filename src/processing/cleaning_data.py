@@ -1,5 +1,6 @@
-INPUT_DIR='../../data/raw/'
-OUTPUT_DIR='../../data/processed/'
+#This file is exported from jupyter notebook
+INPUT_DIR='data/raw/'
+OUTPUT_DIR='data/processed/'
 
 
 import pandas as pd

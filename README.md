@@ -1,5 +1,5 @@
 # Laptop price analysis and prediction
-This project is finished with the help of my companion: **Trinh The Hien** supporting the missing data handling task and prediction model
+This project is finished with the help of my companion: [Trinh The Hien](https://github.com/HienTheTrinh) supporting the missing data handling task and prediction model
 
 --
 # Problem description:
@@ -16,7 +16,9 @@ The data is collected from 3 different sources:
 - notebookcheck.net/Mobile-Graphics-Cards-Benchmark-List.844.0.html
 - amazon.com
 
-Amazon website provides laptops and laptop configuration data (****)
+***Detail about how I crawl data from amazon is currently in [my another repository](https://github.com/hellofromtheothersky/amazon_data_scraper)**
+
+Amazon website provides laptops and laptop configuration data
 
 The first two websites provide more details about the CPU/GPU name and its ranking/performance data. 
 
@@ -29,10 +31,21 @@ Here are some key steps in this phase:
 - Transform and remove value having measurement symbol
 
 # EDA
-I did some Exploratory data analysis that can be founded in the notebook/EDA.ipynb
+I did some Exploratory data analysis that can be founded in the **notebook/EDA.ipynb**
+
 ![image](https://user-images.githubusercontent.com/84280247/223192302-b3240b7f-492c-4b84-ba9a-90ac9bf8ec52.png)
 
 # Model
 Our best-performed model is Random Forest Regressor with R2 score is approximately 0.75
+
+# How to run
+
+- Copy 2 files "laptop_list.csv" and "laptop_details.json" which is the output of the crawler ([details here](https://github.com/hellofromtheothersky/amazon_data_scraper)) to the data/raw/ folder
+- Run the 'src/preprocessing/cleaning_data.py' file and then 'src/preprocessing/deal_missing_val.py', it will generate final_data.csv in the data/processed
+- Run this command
+`python3 src/modeling/train.py` 
+to train the model (default is Random Forest), or you can choose the model via --mdname:
+`python3 src/modeling/train.py --mdname dc`
+for decision tree
 
 

@@ -1,5 +1,5 @@
 # Laptop price analysis and prediction
-This project is finished with the help of my companion: [Trinh The Hien](https://github.com/HienTheTrinh) supporting the missing data handling task and prediction model
+This project is finished with the help of my collaborator: [Trinh The Hien](https://github.com/HienTheTrinh) supporting the missing data handling task and prediction model
 
 --
 # Problem description:

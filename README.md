@@ -33,7 +33,7 @@ Here are some key steps in this phase:
 # EDA
 I did some Exploratory data analysis that can be founded in the **notebook/EDA.ipynb**
 
-![image](https://user-images.githubusercontent.com/84280247/223192302-b3240b7f-492c-4b84-ba9a-90ac9bf8ec52.png)
+<img src="https://user-images.githubusercontent.com/84280247/223192302-b3240b7f-492c-4b84-ba9a-90ac9bf8ec52.png"  width="300">
 
 # Model
 Our best-performed model is Random Forest Regressor with R2 score is approximately 0.75
